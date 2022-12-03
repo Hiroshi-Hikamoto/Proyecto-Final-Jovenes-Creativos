@@ -3,20 +3,25 @@
 
 /*Aqui estoy en el body centrandolo todo desde el mismo y generando una fuente y un color de fondo para todo*/
 body {
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	background-color: #FCB6D0;
-	font-family: Caveat;
+	margin-inline: 0%;
+	background-color: #ffffff;
+	font-family: DynaPuff;
 }
 
 /*Aqui defino los atributos del contador*/
 .contador {
 	float: right;
+	margin-right: 1%;
 }
 
 /*Aqui defino los atributos del titulo principal de la pagina*/
 h1 {
 	font-family: Righteous;
 	margin: 0 auto;
+	margin-left: 7%;
 }
 
 /*Aqui defino los atributos de los botones de interaccion con los que el usuario podra iniciar o mirar las reglas*/
@@ -32,28 +37,82 @@ button {
 }
 
 /*Aqui defino los atributos para los divs que reflejan las preguntas*/
-div {
-	background-color: #B6DCB6;
-	text-align: center;
-	font-family: fantasy;
-	width: auto;
-	margin: 0 auto;
-	border-radius: 50px;
-	width: 500px;
-	padding: 1%;
-}
+.flexbox-container{
+		width: 50%;
+		padding: 10%;
+		font-size: 90%;
+		background-color: #25abe0;
+		font-family: DynaPuff;
+		height: auto;
+		border-radius: 40px;
+		text-decoration: none;
+		margin: 0 auto;
+		padding: 0.04%;
+		margin-top: 10%;
+	  }
 
-/*Aqui defino los atributos para las respuestas de cada pregunta*/
+/*Aqui defino los atributos para las respuestas de cada pregunta
 li {
 	list-style: none;
 	font-family: Caveat;
 	margin: 0 auto;
 	font-size: 200%;
 	text-align: center;
-}
+}*/
 
 /*Aqui defino las caracteristicas de cada pregunta en general*/
 h2 {
 	text-align: center;
 	font-family: Righteous;
 }
+
+.btn {
+	background: #fff;
+	/* color de fondo */
+	color: #000;
+	/* color de fuente */
+	border: 2px solid #000;
+	/* tamaño y color de borde */
+	padding: 1% 2%;
+	border-radius: 30px;
+	/* redondear bordes */
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	display: inline-block;
+	font-family: DynaPuff;
+	/*Posicionamiento*/
+  }
+  
+  .btn:before,
+  .btn:after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: -50%;
+	background-color: #f7b733;
+	/* color de fondo hover */
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:after {
+	left: 100%;
+  }
+  
+  .btn:hover {
+	color: #000f;
+	/* color de fuente hover */
+  }
+  
+  .btn:hover:before {
+	left: 0;
+  }
+  
+  .btn:hover:after {
+	left: 50%;
+  }
