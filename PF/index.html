@@ -10,22 +10,14 @@
     <body>
         <!--Aqui defino un el titulo del juego basandome en la idea de Colombia-->
         <h1>Que tanto sabes sobre...</h1>
-        <br><br>
+        <br>
 
         <!--Aqi escribo las reglas dividiendolas por divs para poder ser manipulables dentro del body-->
         <h2>Reglas:</h2>
         <div class="container">
             <div class="flexbox-container">
-                <p class="p-container">El juego consta de una serie de preguntas donde podras poner
-                    a
-                    prueba tus conocimientos sobre Colombia.<br>Para esto
-                    tendras
-                    una serie de puntuaciones, cada pregunta te presenta unos
-                    puntos
-                    que vas a ir sumando en un contador, entonces cuando
-                    respondas
-                    bien una pregunta tendras una sumatoria que funciona asi:</p>
-            </div>
+                <p class="p-container">El juego consta de una serie de preguntas donde podras poner a prueba tus conocimientos sobre Colombia.<br>Para esto tendras una serie de puntuaciones, cada pregunta te presenta unos puntos que vas a ir sumando en un contador, entonces cuando respondas bien una pregunta tendras una sumatoria que funciona asi:</p>
+            </div> <br>
             <div class="flexbox-container">
                 <ul>
                     <li>Pregunta respondida correctamente: +5p</li>
@@ -33,7 +25,7 @@
                 </ul>
             </div>
         </div><br><br>
-            <div class="container">
+            <div class="flexbox-container">
                 <p>Espero te pongas comodo y puedas tomarte el reto de responder
                     las
                     siguientes preguntas, si te sientes preparado dale a
@@ -41,14 +33,13 @@
                     y disfruta la experiencia. </p>
             </div>
         </div>
-        <br><br>
         <br>
 
         <!--Aqui le doy continuar a la pagina de preguntas donde colocare a flote todas las preguntas del juego-->
         <div class="container-btn">
-            <button class="btn" id="btn_continuar" onclick="continuefuction()">Continuar</a></button>
+            <button class="btn" id="btn_continuar"> <a href="preguntas.html">Continuar</a></a></button>
         </div>
-
+        <br>
         <div class="container-btn">
             <button class="btn" id="btn_cerrarSession">Cerrar session</button>
         </div>
@@ -57,9 +48,7 @@
         <script src="index.css"></script>
         <script>
             const btn_cerrarSession = document.getElementById('btn_cerrarSession')
-            const btn_continuar = document.getElementById('btn_continuar')
             btn_cerrarSession.addEventListener('click', cerrarSession)
-            btn_continuar.addEventListener('click', continuefuction)
         </script>
     </body>
 </html>
