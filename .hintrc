@@ -26,6 +26,7 @@
       {
         "duplicate-id-active": "off"
       }
-    ]
+    ],
+    "meta-viewport": "off"
   }
 }
