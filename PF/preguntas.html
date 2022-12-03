@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Preguntas</title>
 		<link rel="stylesheet" type="text/css" href="preguntas.css">
+		<script src="preguntas.js"></script>
 	</head>
 
 	<body>
@@ -23,23 +24,15 @@
 
 		<!--Estoy por medio de divs definiendo las preguntas con sus respectivas opciones-->
 		<div>
-			<div id=" tablero-de-juego ">
-				<div id=" encabezado "></div>
+			<div id="footer">
+				<div id="header"></div>
 					<br>
-					<span id=" pregunta "> Aquí va la pregunta </span>
+					<span id="uestion">Question</span>
 					<br>
-					<div div class=" opcion " id="option1" onclick="selector(0)">
-						option
-					</div>
-					<div class=" opcion " id="option2" onclick="selector(1)">
-						option
-					</div>
-					<div div class=" opcion " id="option3"  onclick="selector(2)">
-						option
-					</div>
-					<div div class=" opcion " id="option4" onclick=" selector(3)">
-						option
-					</div>
+					<div class="option" id="option1" onclick="selector(0)">option</div>
+					<div class="option" id="option2" onclick="selector(1)">option</div>
+					<div class="option" id="option3"  onclick="selector(2)">option</div>
+					<div class="option" id="option4" onclick=" selector(3)">option</div>
 				</div>
 			</div>
 		</body>

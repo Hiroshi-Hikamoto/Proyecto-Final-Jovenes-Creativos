@@ -39,3 +39,8 @@ function cerrarSession() {
   eliminarLogin()
   window.location = 'login.html'
 }
+
+function continuefunction () {
+    window.location.href = 'preguntas.html';
+  
+}

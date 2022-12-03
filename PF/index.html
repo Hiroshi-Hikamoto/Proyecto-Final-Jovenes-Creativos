@@ -46,7 +46,7 @@
 
         <!--Aqui le doy continuar a la pagina de preguntas donde colocare a flote todas las preguntas del juego-->
         <div class="container-btn">
-            <button class="btn" id="btn_continuar" onclick="continuefuction();">Continuar</a></button>
+            <button class="btn" id="btn_continuar" onclick="continuefuction()">Continuar</a></button>
         </div>
 
         <div class="container-btn">
@@ -54,10 +54,12 @@
         </div>
 
         <script src="loguin.js"></script>
-        <script src="index.html"></script>
+        <script src="index.css"></script>
         <script>
             const btn_cerrarSession = document.getElementById('btn_cerrarSession')
+            const btn_continuar = document.getElementById('btn_continuar')
             btn_cerrarSession.addEventListener('click', cerrarSession)
+            btn_continuar.addEventListener('click', continuefuction)
         </script>
     </body>
 </html>
