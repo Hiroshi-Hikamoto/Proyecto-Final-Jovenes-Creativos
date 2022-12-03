@@ -6,34 +6,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Preguntas</title>
 		<link rel="stylesheet" type="text/css" href="preguntas.css">
-		<script src="preguntas.js"></script>
 	</head>
 
 	<body>
-
-		<!--Aqui estoy colocando el encabezado del juego de preguntas con su respectivo contador-->
-		<header>
-			<button class="contador">Contador</button>
-			<h1>PREGUNTAS</h1>
-		</header>
-
-		<!--Aquie estoy agregando las opciones de poder regresar a las opciones o seguir adelante con el juego-->
-		<h2>¿Estas listo?</h2>
-		<button><a href="index.html">Regresar a las instrucciones</a></button>
-		<button>Iniciar</button>
-
-		<!--Estoy por medio de divs definiendo las preguntas con sus respectivas opciones-->
-		<div>
 			<div class="flexbox-container" id="footer">
-				<div id="header"></div>
-					<br>
-					<span id="question">Question</span>
-					<br>
-					<div class="btn" id="option1" onclick="selector(0)">option</div>
-					<div class="btn" id="option2" onclick="selector(1)">option</div>
-					<div class="btn" id="option3"  onclick="selector(2)">option</div>
-					<div class="btn" id="option4" onclick=" selector(3)">option</div>
-				</div>
-			</div>
-		</body>
-	</html>
+				<div id="questions"></div>
+				<div id="answers"></div>
+		    </div>
+			<div id="questions"></div>
+			<div id="answers"></div>
+
+
+		<script>
+            var questions =  [
+				"Estas tres ciudades se localizan en las costas del mar Caribe: ",
+				""
+			]
+            var answer = [
+				"Tumacoí, Buenaventura y Nuquí.", "Santa Marta, Barranquilla y Cartagena.", "Cali, Medellín y Pasto."
+			]
+
+			var randoma = Math.floor(Math.random()*questions.length);
+
+			var variables = answers[randoma];
+
+			var position = [0, 1, 2, 3];
+			var ordenanswers = [];
+
+			var randomposition = Math.floor(Math.random()*positions.length);
+
+
+
+			var answertxt="";
+			for (i in variables) {
+				answertxt += 'input type="radio"><label>'+variables[i]+'</label></input>';
+			}
+
+			document.getElementById("answers").innerHTML = answerstxt;
+			document.getElementById("questions").innerHTML = questions[randomm]
+		</script>
+	</body>
+</html>

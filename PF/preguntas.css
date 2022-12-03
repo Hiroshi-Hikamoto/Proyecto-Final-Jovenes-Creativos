@@ -66,7 +66,12 @@ h2 {
 	font-family: Righteous;
 }
 
+.question {
+	margin-block: 4%;
+}
+
 .btn {
+	margin-bottom: 3%;
 	background: #fff;
 	/* color de fondo */
 	color: #000;
