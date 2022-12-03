@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Reto</title>
+    </head>
+    <body>
+        <!--Aqui defino un el titulo del juego basandome en la idea de Colombia-->
+        <h1>Que tanto sabes sobre...</h1>
+        <br><br>
+
+        <!--Aqi escribo las reglas dividiendolas por divs para poder ser manipulables dentro del body-->
+        <h2>Reglas:</h2>
+        <div class="container">
+            <div class="flexbox-container">
+                <p class="p-container">El juego consta de una serie de preguntas donde podras poner
+                    a
+                    prueba tus conocimientos sobre Colombia.<br>Para esto
+                    tendras
+                    una serie de puntuaciones, cada pregunta te presenta unos
+                    puntos
+                    que vas a ir sumando en un contador, entonces cuando
+                    respondas
+                    bien una pregunta tendras una sumatoria que funciona asi:</p>
+            </div>
+            <div class="flexbox-container">
+                <ul>
+                    <li>Pregunta respondida correctamente: +5p</li>
+                    <li>Pregunta respondida incorrectamente: -2.5p</li>
+                </ul>
+            </div>
+        </div><br><br>
+            <div class="container">
+                <p>Espero te pongas comodo y puedas tomarte el reto de responder
+                    las
+                    siguientes preguntas, si te sientes preparado dale a
+                    "Continuar"
+                    y disfruta la experiencia. </p>
+            </div>
+        </div>
+        <br><br>
+        <br>
+
+        <!--Aqui le doy continuar a la pagina de preguntas donde colocare a flote todas las preguntas del juego-->
+        <div class="container-btn">
+            <button class="btn" id="btn_continuar" onclick="continuefuction();">Continuar</a></button>
+        </div>
+
+        <div class="container-btn">
+            <button class="btn" id="btn_cerrarSession">Cerrar session</button>
+        </div>
+
+        <script src="loguin.js"></script>
+        <script src="index.html"></script>
+        <script>
+            const btn_cerrarSession = document.getElementById('btn_cerrarSession')
+            btn_cerrarSession.addEventListener('click', cerrarSession)
+        </script>
+    </body>
+</html>

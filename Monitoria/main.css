@@ -1,0 +1,36 @@
+body {
+  background-image: url('imagenes/nebulosa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor {
+  background-color: aliceblue;
+  width: 80%;
+  margin: auto;
+  height: 800px;
+  padding: 20px 50px 0px 50px;
+}
+
+.contenedor header {
+  text-align: center;
+}
+
+section {
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+}
+
+section p {
+  text-align: center;
+}
+
+#hola_mundo {
+  color:aliceblue;
+}

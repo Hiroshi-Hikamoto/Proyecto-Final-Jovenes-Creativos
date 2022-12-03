@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Preguntas</title>
+		<link rel="stylesheet" type="text/css" href="preguntas.css">
+	</head>
+
+	<body>
+
+		<!--Aqui estoy colocando el encabezado del juego de preguntas con su respectivo contador-->
+		<header>
+			<button class="contador">Contador</button>
+			<h1>PREGUNTAS</h1>
+		</header>
+
+		<!--Aquie estoy agregando las opciones de poder regresar a las opciones o seguir adelante con el juego-->
+		<h2>¿Estas listo?</h2>
+		<button><a href="index.html">Regresar a las instrucciones</a></button>
+		<button>Iniciar</button>
+
+		<!--Estoy por medio de divs definiendo las preguntas con sus respectivas opciones-->
+		<div>
+			<div id=" tablero-de-juego ">
+				<div id=" encabezado "></div>
+					<br>
+					<span id=" pregunta "> Aquí va la pregunta </span>
+					<br>
+					<div div class=" opcion " id="option1" onclick="selector(0)">
+						option
+					</div>
+					<div class=" opcion " id="option2" onclick="selector(1)">
+						option
+					</div>
+					<div div class=" opcion " id="option3"  onclick="selector(2)">
+						option
+					</div>
+					<div div class=" opcion " id="option4" onclick=" selector(3)">
+						option
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

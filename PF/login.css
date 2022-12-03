@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@500&family=Indie+Flower&family=Righteous&display=swap');
+
+*{
+  text-align: center;
+  align-items: center;
+}
+
+body {
+  text-align: center;
+	background-color: #ffffff;
+	font-family: DynaPuff;
+}
+
+.form-container {
+  background-color: #25abe0;
+  width: 40%;
+  margin: auto;
+  height: 800%;
+  padding: 5%;
+  border-radius: 50px;
+}
+
+.stroke {
+  -webkit-text-fill-color: #eaee0b;
+  -webkit-text-stroke: 0.8px #000;
+}
+
+.stroke1 {
+  -webkit-text-fill-color: #eaee0b;
+  -webkit-text-stroke: 1.5px #000;
+}
+
+.input-container {
+  margin: 10px 0px;
+}
+
+input {
+  font-family: DynaPuff;
+	background-color: #ffff;
+	width: auto;
+	height: 35px;
+	border-radius: 40px;
+	text-decoration: none;
+	outline: none;
+  border-color: #000;
+}
+
+
+/*Animacion de los botones*/
+
+.btn {
+  background: #fff; /* color de fondo */
+  color: #000; /* color de fuente */
+  border: 2px solid #000; /* tamaño y color de borde */
+  padding: 1% 2%;
+  border-radius: 30px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-family: DynaPuff;
+}
+.btn:before, .btn:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-color: #f7b733; /* color de fondo hover */
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn:after {
+  left: 100%;
+}
+.btn:hover {
+  color: #000f; /* color de fuente hover */
+}
+.btn:hover:before {
+  left: 0;
+}
+.btn:hover:after {
+  left: 50%;
+}

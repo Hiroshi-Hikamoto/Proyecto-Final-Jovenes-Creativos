@@ -1,0 +1,140 @@
+/*Aqui importo una familia de fuentes desde la nube de google, asi pudiendo usar diferentes fuentes a la hora de desarrollar la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@500&family=Indie+Flower&family=Righteous&display=swap');
+
+/*Aqui estoy en el body centrandolo todo desde el mismo y generando una fuente y un color de fondo para todo*/
+body {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-inline: 0%;
+  background-color: #ffffff;
+	font-family: DynaPuff;
+}
+
+/*Aqui defino los atributos del titulo principal de la pagina*/
+h1 {
+  font-family: DynaPuff;
+}
+
+
+
+.container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flexbox-container{
+  width: 50%;
+  padding: 10px;
+  font-size: 80%;
+  background-color: #25abe0;
+  font-family: DynaPuff;
+  height: auto;
+  border-radius: 40px;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0.04%;
+}
+
+.p-container {
+  margin-block: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px;
+}
+
+
+
+
+/*Aqui defino los atributos del div de las reglas dandole unos atributos ajustables
+.container2 {
+    font-size: 150%;
+    background-color: #B6DCB6;
+    width: 70%;
+    font-family: DynaPuff;
+    height: auto;
+    border-radius: 40px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.7%;
+}
+
+Aqui defino los atributos del div de la frase motivadora dandole atributos ajustables
+.container1 {
+    font-size: 100%;
+    background-color: #B6DCB6;
+    width: 70%;
+    font-family: DynaPuff;
+    height: auto;
+    border-radius: 40px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.7%;
+}*/
+
+/*Aqui le quito a las listas un atriuto visual que me parecia molesto*/
+ul {
+  list-style: none;
+}
+
+/*Aqui le doy la fuente al titulo*/
+h2 {
+  font-family: DynaPuff;
+}
+
+/*Aqui a la etiqueta "a" le quite un atributo que me parecia molesto*/
+a {
+  text-decoration: none;
+}
+
+/*Aqui le doy la animacion y caracteristicas a cada boton*/
+.btn {
+  background: #fff;
+  /* color de fondo */
+  color: #000;
+  /* color de fuente */
+  border: 2px solid #000;
+  /* tamaño y color de borde */
+  padding: 1% 2%;
+  border-radius: 30px;
+  /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  font-family: DynaPuff;
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-color: #f7b733;
+  /* color de fondo hover */
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:after {
+  left: 100%;
+}
+
+.btn:hover {
+  color: #000f;
+  /* color de fuente hover */
+}
+
+.btn:hover:before {
+  left: 0;
+}
+
+.btn:hover:after {
+  left: 50%;
+}

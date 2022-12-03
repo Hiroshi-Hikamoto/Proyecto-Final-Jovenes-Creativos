@@ -1,0 +1,59 @@
+/*Aqui importo una familia de fuentes desde la nube de google, asi pudiendo usar diferentes fuentes a la hora de desarrollar la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@500&family=Indie+Flower&family=Righteous&display=swap');
+
+/*Aqui estoy en el body centrandolo todo desde el mismo y generando una fuente y un color de fondo para todo*/
+body {
+	text-align: center;
+	background-color: #FCB6D0;
+	font-family: Caveat;
+}
+
+/*Aqui defino los atributos del contador*/
+.contador {
+	float: right;
+}
+
+/*Aqui defino los atributos del titulo principal de la pagina*/
+h1 {
+	font-family: Righteous;
+	margin: 0 auto;
+}
+
+/*Aqui defino los atributos de los botones de interaccion con los que el usuario podra iniciar o mirar las reglas*/
+button {
+	font-family: DynaPuff;
+	background-color: #FFABAB;
+	width: auto;
+	height: 35px;
+	border-radius: 40px;
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+
+/*Aqui defino los atributos para los divs que reflejan las preguntas*/
+div {
+	background-color: #B6DCB6;
+	text-align: center;
+	font-family: fantasy;
+	width: auto;
+	margin: 0 auto;
+	border-radius: 50px;
+	width: 500px;
+	padding: 1%;
+}
+
+/*Aqui defino los atributos para las respuestas de cada pregunta*/
+li {
+	list-style: none;
+	font-family: Caveat;
+	margin: 0 auto;
+	font-size: 200%;
+	text-align: center;
+}
+
+/*Aqui defino las caracteristicas de cada pregunta en general*/
+h2 {
+	text-align: center;
+	font-family: Righteous;
+}
