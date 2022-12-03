@@ -1,49 +1,38 @@
 <!DOCTYPE html>
 <html>
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Preguntas</title>
-		<link rel="stylesheet" type="text/css" href="preguntas.css">
-	</head>
-
-	<body>
-			<div class="flexbox-container" id="footer">
-				<div id="questions"></div>
-				<div id="answers"></div>
-		    </div>
-			<div id="questions"></div>
-			<div id="answers"></div>
-
-
-		<script>
-            var questions =  [
-				"Estas tres ciudades se localizan en las costas del mar Caribe: ",
-				""
-			]
-            var answer = [
-				"Tumacoí, Buenaventura y Nuquí.", "Santa Marta, Barranquilla y Cartagena.", "Cali, Medellín y Pasto."
-			]
-
-			var randoma = Math.floor(Math.random()*questions.length);
-
-			var variables = answers[randoma];
-
-			var position = [0, 1, 2, 3];
-			var ordenanswers = [];
-
-			var randomposition = Math.floor(Math.random()*positions.length);
-
-
-
-			var answertxt="";
-			for (i in variables) {
-				answertxt += 'input type="radio"><label>'+variables[i]+'</label></input>';
-			}
-
-			document.getElementById("answers").innerHTML = answerstxt;
-			document.getElementById("questions").innerHTML = questions[randomm]
-		</script>
-	</body>
+  <head>
+    <title>PREGUNTAS</title>
+    <meta charset="utf-8">
+    <link href="preguntas.css" type="text/css" rel="stylesheet">
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="underscore-1.8.3.min.js"></script>
+    <script src="preguntas.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>PREGUNTAS</h1>
+        <h2>¿Sabes tanto como creías?</h2>
+      </div>
+      <div class="countdown"><span class="time_left">12s</span></div>
+      <div class="points"><span class="points">0 points</span></div>
+    </header>
+    <div class="start">
+      <div class="card">
+        <p>¿Listo para comenzar?</p>
+        <button class="start">Comenzar</button>
+      </div>
+    </div>
+    <div class="play">
+      <div class="questions"></div>
+    </div>
+    <div class="finish card">
+      <p class="times_up">¡Se acabó el tiempo!</p>
+      <p>Has obtenido</p>
+      <p class="final_points">8 puntos</p>
+      <div class="play_again">
+        <button>Volver a jugar</button>
+      </div>
+    </div>
+  </body>
 </html>

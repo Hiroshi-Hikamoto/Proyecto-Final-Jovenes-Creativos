@@ -1,123 +1,132 @@
-/*Aqui importo una familia de fuentes desde la nube de google, asi pudiendo usar diferentes fuentes a la hora de desarrollar la pagina*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@500&family=Indie+Flower&family=Righteous&display=swap');
-
-/*Aqui estoy en el body centrandolo todo desde el mismo y generando una fuente y un color de fondo para todo*/
 body {
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 	margin-inline: 0%;
 	background-color: #ffffff;
 	font-family: DynaPuff;
 }
 
-/*Aqui defino los atributos del contador*/
-.contador {
-	float: right;
-	margin-right: 1%;
+* {
+	box-sizing: border-box;
 }
 
-/*Aqui defino los atributos del titulo principal de la pagina*/
-h1 {
-	font-family: Righteous;
-	margin: 0 auto;
-	margin-left: 7%;
-}
-
-/*Aqui defino los atributos de los botones de interaccion con los que el usuario podra iniciar o mirar las reglas*/
 button {
-	font-family: DynaPuff;
-	background-color: #FFABAB;
-	width: auto;
-	height: 35px;
-	border-radius: 40px;
-	text-decoration: none;
-	color: #000;
-	outline: none;
-}
-
-/*Aqui defino los atributos para los divs que reflejan las preguntas*/
-.flexbox-container{
-		width: 50%;
-		padding: 10%;
-		font-size: 90%;
-		background-color: #25abe0;
-		font-family: DynaPuff;
-		height: auto;
-		border-radius: 40px;
-		text-decoration: none;
-		margin: 0 auto;
-		padding: 0.04%;
-		margin-top: 10%;
-	  }
-
-/*Aqui defino los atributos para las respuestas de cada pregunta
-li {
-	list-style: none;
-	font-family: Caveat;
-	margin: 0 auto;
-	font-size: 200%;
-	text-align: center;
-}*/
-
-/*Aqui defino las caracteristicas de cada pregunta en general*/
-h2 {
-	text-align: center;
-	font-family: Righteous;
-}
-
-.question {
-	margin-block: 4%;
-}
-
-.btn {
-	margin-bottom: 3%;
-	background: #fff;
-	/* color de fondo */
-	color: #000;
-	/* color de fuente */
-	border: 2px solid #000;
-	/* tamaño y color de borde */
-	padding: 1% 2%;
-	border-radius: 30px;
-	/* redondear bordes */
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
-	display: inline-block;
-	font-family: DynaPuff;
-	/*Posicionamiento*/
-  }
-  
-  .btn:before,
-  .btn:after {
-	content: "";
-	z-index: -1;
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	top: 0;
-	left: -50%;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
 	background-color: #f7b733;
-	/* color de fondo hover */
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-  }
-  
-  .btn:after {
-	left: 100%;
-  }
-  
-  .btn:hover {
-	color: #000f;
-	/* color de fuente hover */
-  }
-  
-  .btn:hover:before {
-	left: 0;
-  }
-  
-  .btn:hover:after {
-	left: 50%;
-  }
+}
+
+header .title {
+	background-color: #25abe0;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+header div.countdown {
+	float: right;
+}
+
+header div.points {
+	float: left;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+header div.points.animate.right {
+	color: #34db34;
+}
+
+header div.points.animate.wrong {
+	color: #bf0000;
+}
+
+header div.countdown, header div.points {
+	font-weight: bold;
+	margin: 10px;
+	color: #fff;
+	padding: 0px;
+	font-size: 26px;
+}
+
+.card {
+	background-color: rgb(25, 205, 25);
+	width: 500px;
+	background-color: #25abe0;
+	margin: 100px auto 30px auto;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+}
+
+div.start .card {
+	display: block;
+}
+
+div.start .card p, .question.card span.question {
+	font-size: 25px;
+}
+
+.card.question {
+	display: none;
+}
+
+.card.question.active {
+	display: block;
+}
+
+.card.question .options {
+	padding: 0;
+	list-style: none;
+	margin-top: 35px;
+}
+
+.card.question .options > li {
+	margin: 10px 80px;
+}
+
+.card.question .options > li label {
+	background-color: #ffffff;
+	display: block;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.card.question .options > li label:hover {
+	background-color: #f7b733;
+}
+
+.card.question .options > li input:checked + label {
+	background-color: #4D8E8C !important;
+	color: rgb(35, 35, 181);
+}
+
+.card.question .options > li input {
+	opacity: 0;
+	display: none;
+}
+
+.finish {
+	display: none;
+}
+
+.card.finish p {
+	font-size: 22px;
+}
+
+.card.finish .final_points {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.play_again,
+button.start {
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #000
+}
